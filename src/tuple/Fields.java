@@ -1,4 +1,4 @@
-package core;
+cpackage tuple;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,7 +22,7 @@ public class Fields implements Iterable<String>, Serializable {
 	private List<String> values;
     private Map<String, Integer> index = new HashMap<>();
     
-    public Fields(String values) {
+    public Fields(String... values) {
         this(Arrays.asList(values));
     }
     
